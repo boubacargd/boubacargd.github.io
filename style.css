@@ -187,42 +187,58 @@ nav{
 }
 
 .carte img {
-    width: 250px;
-    height: 250px;
-   
+    width: 90%;
+    height: 90%;
+    border-radius: 0.7rem;
+    
 }
 
 .carte {
-    background-color: white;
-    flex-direction: column;
-    max-width: 250px;
-    height: 300px;
-    border-radius: 0.8rem;
+
+    border-radius: 0.7rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
     text-align: center;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.801);
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.409);
 }
 
-.carte:hover {
+/* .carte img:hover {
     transform: scale(1.05);
-    box-shadow: 5px 5px 5px rgb(109, 109, 109);
-    cursor:pointer ;
-}
+} */
 
 .cartes {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(10%, 1fr));
+    gap: 1rem;
 }
 
 .carte span{
-    color: black;
+    font-weight: 800;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+
+    backdrop-filter: blur(10px);
+    color: rgb(255, 255, 255);
+    width: 45%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
 }
 
 .boubaimg{
     border-radius: 15px 50px;
-
 }
 
 .stat{
@@ -296,10 +312,79 @@ nav{
     transition: transform 0.3s ease-in-out;
 
 }
-.languages .listes div img:hover {
-    transform: scale(1.05);
-}
+
 
 .gif3d{
   
+}
+
+.form{
+    margin: 30px 0px;
+}
+
+.form input{
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom:2%;
+    width: 70%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+    font-weight: 700;
+}
+.form textarea{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    width: 70%;
+    height: 200px;
+    resize: none;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.form div{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.form button{
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 35%;
+    height: 50px;
+    resize: none;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 4%;
+    font-weight: 300;
+}
+
+.form button:hover{
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.178);
+    background-image: linear-gradient(-225deg,
+            #1e5057 0%,
+            #2f7d70 29%,
+            #68d7b6 67%,
+            #1e5057 100%);
+    background-size: 200% auto;
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
