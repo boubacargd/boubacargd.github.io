@@ -1,0 +1,305 @@
+
+body{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: "Sigmar", sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(-2deg, white, #1e5057);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+strong{
+    font-weight: 700;
+}
+
+nav{
+    top: -1rem;
+    left: 30%;
+    width: 100%;
+} 
+
+.navbar-nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.navbar-nav .discutons{
+    width: 25%;
+} 
+
+.nav-link{
+    color: white;
+    margin-right: 30px;
+    width: 15%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.056);
+    border-radius: 5rem;
+}
+.nav-link:hover{
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.178);
+    background-image: linear-gradient(-225deg,
+            #1e5057 0%,
+            #2f7d70 29%,
+            #68d7b6 67%,
+            #1e5057 100%);
+    background-size: 200% auto;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+
+
+.videobg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.section1{
+    width:25%;
+    border: 1px solid rgba(108, 108, 108, 0.481);
+    margin: 2rem;
+    backdrop-filter: blur(1px);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    position: fixed;
+}
+
+.pcicon{
+    width: 40px;
+    height: 40px;
+}
+.section1 h3{
+    margin-left: 10px;
+}
+
+.iconBoy3d{
+    width: 90%;
+    border-radius: 5%;
+}
+
+.section1 .info {
+    margin: 5%;
+}
+
+.section1 .info span {
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.668);
+}
+.section1 .info p {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section1 .social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section1 .social i{
+    margin: 2%;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.discutons{
+    margin: 5%;
+    border: none;
+    width: 80%;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.178);
+    background-image: linear-gradient(-225deg,
+            #1e5057 0%,
+            #2f7d70 29%,
+            #68d7b6 67%,
+            #1e5057 100%);
+    background-size: 200% auto;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    animation: textclip 10s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: -250% center;
+    }
+}
+
+
+.opo{
+    position: absolute;
+    top: 50%; 
+    left: 30%; 
+  
+}
+
+.bienvenu {
+    font-family: "Sigmar", sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(-225deg, white, #1e5057);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section2{
+    width: 70%;
+}
+
+.section2 .home {
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid white;
+    width: 15%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-weight: 800;
+}
+.section2 .home i {
+    margin-right: 5px;
+}
+
+.projetbutton{
+    text-align: center;
+    font-size: 1rem;
+    border: 0.51px solid white;
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    margin-right: 20px;
+}
+.section2 .cv button{
+    border: none;
+    background-color: transparent;    
+    color: white;
+}
+
+.carte img {
+    width: 250px;
+    height: 250px;
+   
+}
+
+.carte {
+    background-color: white;
+    flex-direction: column;
+    max-width: 250px;
+    height: 300px;
+    border-radius: 0.8rem;
+    text-align: center;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.801);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carte:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px rgb(109, 109, 109);
+    cursor:pointer ;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.carte span{
+    color: black;
+}
+
+.boubaimg{
+    border-radius: 15px 50px;
+
+}
+
+.stat{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.stat div{
+    width: 20%;
+    padding: 2rem;
+    border: 1px solid white;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    background: linear-gradient(-2deg, white, #1e5057);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    backdrop-filter: blur(10px);
+
+}
+
+.stat div span{
+    font-size: 3rem;
+    font-family: "Sigmar", sans-serif;
+}
+
+.apropostext{
+    width: 65%;
+}
+
+.section2 .info{
+    margin-left: 5% ;
+}
+.section2 .info span{
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.668);
+}
+
+.section2 .info p{
+    font-weight: 700;
+}
+
+
+.listes{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 4fr));
+    gap: 0.5rem;
+ }
+ 
+.langGif{
+    margin: 5%;
+}
+
+ .languages {
+    width: 100%;
+    margin: 2%;
+}
+
+ .languages i{
+    font-size: 3rem;
+ }
+
+.listes div span {
+    font-weight: 700;
+    margin-left: 0.1rem;
+}
+.languages .listes div{
+    width: 150px;
+    height: 80px;
+    border-radius: 2rem;
+    transition: transform 0.3s ease-in-out;
+
+}
+.languages .listes div img:hover {
+    transform: scale(1.05);
+}
+
+.gif3d{
+  
+}
