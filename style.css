@@ -1,11 +1,10 @@
-
-body{
+body {
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
-h1{
+h1 {
     font-family: "Sigmar", sans-serif;
     font-size: 3rem;
     background: linear-gradient(-2deg, white, #1e5057);
@@ -13,28 +12,29 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 
-strong{
+strong {
     font-weight: 700;
 }
 
-nav{
+nav {
     top: -1rem;
     left: 30%;
     width: 100%;
-} 
+}
 
-.navbar-nav{
+.navbar-nav {
 
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
-.navbar-nav .discutons{
-    width: 25%;
-} 
 
-.nav-link{
+.navbar-nav .discutons {
+    width: 25%;
+}
+
+.nav-link {
     color: white;
     margin-right: 30px;
     width: 15%;
@@ -42,7 +42,8 @@ nav{
     border: 1px solid rgba(255, 255, 255, 0.056);
     border-radius: 5rem;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     border-radius: 2rem;
     cursor: pointer;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.178);
@@ -57,7 +58,7 @@ nav{
 
 
 
-.videobg{
+.videobg {
     position: fixed;
     top: 0;
     left: 0;
@@ -67,8 +68,9 @@ nav{
     height: auto;
     z-index: -1;
 }
-.section1{
-    width:25%;
+
+.section1 {
+    width: 25%;
     border: 1px solid rgba(108, 108, 108, 0.481);
     margin: 2rem;
     backdrop-filter: blur(1px);
@@ -77,15 +79,16 @@ nav{
     position: fixed;
 }
 
-.pcicon{
+.pcicon {
     width: 40px;
     height: 40px;
 }
-.section1 h3{
+
+.section1 h3 {
     margin-left: 10px;
 }
 
-.iconBoy3d{
+.iconBoy3d {
     width: 90%;
     border-radius: 5%;
 }
@@ -98,6 +101,7 @@ nav{
     font-weight: 100;
     color: rgba(255, 255, 255, 0.668);
 }
+
 .section1 .info p {
     font-weight: 800;
     text-transform: uppercase;
@@ -108,13 +112,13 @@ nav{
     justify-content: space-between;
 }
 
-.section1 .social i{
+.section1 .social i {
     margin: 2%;
     font-size: 1.3rem;
     cursor: pointer;
 }
 
-.discutons{
+.discutons {
     margin: 5%;
     border: none;
     width: 80%;
@@ -140,11 +144,11 @@ nav{
 }
 
 
-.opo{
+.opo {
     position: absolute;
-    top: 50%; 
-    left: 30%; 
-  
+    top: 50%;
+    left: 30%;
+
 }
 
 .bienvenu {
@@ -154,7 +158,8 @@ nav{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.section2{
+
+.section2 {
     width: 70%;
 }
 
@@ -167,11 +172,12 @@ nav{
     border-radius: 2rem;
     font-weight: 800;
 }
+
 .section2 .home i {
     margin-right: 5px;
 }
 
-.projetbutton{
+.projetbutton {
     text-align: center;
     font-size: 1rem;
     border: 0.51px solid white;
@@ -180,9 +186,10 @@ nav{
     border-radius: 1.5rem;
     margin-right: 20px;
 }
-.section2 .cv button{
+
+.section2 .cv button {
     border: none;
-    background-color: transparent;    
+    background-color: transparent;
     color: white;
 }
 
@@ -190,7 +197,7 @@ nav{
     width: 90%;
     height: 90%;
     border-radius: 0.7rem;
-    
+
 }
 
 .carte {
@@ -201,14 +208,16 @@ nav{
     border-radius: 1rem;
     text-align: center;
     overflow: hidden;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
     border: 1px solid rgba(255, 255, 255, 0.409);
+
+    cursor: pointer;
 }
 
 /* .carte img:hover {
@@ -217,11 +226,12 @@ nav{
 
 .cartes {
     display: grid;
-    grid-template-columns: repeat(2, minmax(10%, 1fr));
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
     gap: 1rem;
+    padding: 5rem;
 }
 
-.carte span{
+.carte span {
     font-weight: 800;
     position: absolute;
     left: 1rem;
@@ -231,22 +241,23 @@ nav{
     color: rgb(255, 255, 255);
     width: 45%;
     height: 10%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
-.boubaimg{
+.boubaimg {
     border-radius: 15px 50px;
 }
 
-.stat{
+.stat {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-.stat div{
+
+.stat div {
     width: 20%;
     padding: 2rem;
     border: 1px solid white;
@@ -260,74 +271,79 @@ nav{
 
 }
 
-.stat div span{
+.stat div span {
     font-size: 3rem;
     font-family: "Sigmar", sans-serif;
 }
 
-.apropostext{
+.apropostext {
     width: 65%;
 }
 
-.section2 .info{
-    margin-left: 5% ;
+.section2 .info {
+    margin-left: 5%;
 }
-.section2 .info span{
+
+.section2 .info span {
     font-weight: 100;
     color: rgba(255, 255, 255, 0.668);
 }
 
-.section2 .info p{
+.section2 .info p {
     font-weight: 700;
 }
 
 
-.listes{
+.listes {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 4fr));
     gap: 0.5rem;
- }
- 
-.langGif{
-    margin: 5%;
 }
 
- .languages {
+.langGif {
+    margin-top: 2%;
     width: 100%;
+}
+
+.languages {
+    width: 50%;
     margin: 2%;
 }
 
- .languages i{
+.languages i {
     font-size: 3rem;
- }
+}
 
 .listes div span {
     font-weight: 700;
     margin-left: 0.1rem;
 }
-.languages .listes div{
+
+.languages .listes div {
     width: 150px;
     height: 80px;
     border-radius: 2rem;
     transition: transform 0.3s ease-in-out;
-
 }
 
 
-.gif3d{
-  
+.gif3d {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.form{
+.form {
     margin: 30px 0px;
 }
 
-.form input{
+.form input {
     background-color: transparent;
     backdrop-filter: blur(1px);
     color: white;
     font-size: 1.2rem;
-    margin-bottom:2%;
+    margin-bottom: 2%;
     width: 70%;
     padding: 1rem;
     box-sizing: border-box;
@@ -335,7 +351,8 @@ nav{
     border-bottom: 1px solid white;
     font-weight: 700;
 }
-.form textarea{
+
+.form textarea {
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid white;
@@ -350,18 +367,18 @@ nav{
     font-weight: 700;
 }
 
-textarea:focus, input:focus{
+textarea:focus,
+input:focus {
     outline: none;
 }
 
-.form div{
+.form div {
     display: flex;
     justify-content: center;
-
-
+    align-items: center;
 }
 
-.form button{
+.form button {
     border: 1px solid white;
     border-radius: 1rem;
     width: 35%;
@@ -369,13 +386,13 @@ textarea:focus, input:focus{
     resize: none;
     background-color: transparent;
     backdrop-filter: blur(10px);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
     margin-top: 4%;
     font-weight: 300;
 }
 
-.form button:hover{
+.form button:hover {
     border: none;
     border-radius: 1rem;
     cursor: pointer;
@@ -387,4 +404,49 @@ textarea:focus, input:focus{
             #1e5057 100%);
     background-size: 200% auto;
     -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+.experience {
+    width: 100%;
+}
+
+#experience h3 {
+    font-family: "Sigmar", sans-serif;
+    font-size: 2rem;
+    background: linear-gradient(-2deg, white, #1e5057);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.experience div {
+    width: 98%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.562);
+}
+
+.experience div:first-child {
+    box-sizing: border-box;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.562);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.562);
+}
+
+.experience div span {
+    width: 12%;
+    font-weight: 100;
+    font-size: 0.7rem;
+}
+
+.experience div h4 {
+    width: 20%;
+    font-size: 1rem;
+
+}
+
+.experience div p {
+    width: 60%;
+    font-size: 0.8rem;
+
 }
