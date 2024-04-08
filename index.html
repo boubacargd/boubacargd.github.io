@@ -376,11 +376,12 @@
                 <p>Pour des collaborations innovantes et des projets, envoyez-moi un message dès maintenant.</p>
 
                 <div class="form row ">
-                    <input type="text" required placeholder="Votre Nom">
-                    <input type="email" required placeholder="Adresse Email">
-                    <textarea placeholder="Des mots ..."></textarea>
+                    <input type="text" id="nom" required placeholder="Votre Nom">
+                    <input type="email" id="email" required placeholder="Email">
+                    <input type="text" id="sujet" required placeholder="Sujet">
+                    <textarea type="text" id="message" placeholder="Des mots ..."></textarea>
                     <div>
-                        <button type="submit">Envoyer le message <i class="bi bi-send"></i></button>
+                        <button type="submit" onclick="sendMail()">Envoyer le message <i class="bi bi-send"></i></button>
                     </div>
                 </div>
             </div>
