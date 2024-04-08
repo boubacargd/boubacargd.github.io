@@ -17,15 +17,15 @@ function sendMail() {
             document.getElementById("nom").value = "",
             document.getElementById("email").value = "",
             document.getElementById("sujet").value = "",
-            document.getElementById("message").value = "",
-            console.log(res)
-            alert("Message bien envoyé!")
+            document.getElementById("message").value = ""
 
-            })
-        .catch((err) => {
-            console.log(err),
-            alert("errore lors de l'envoei de messsage, reessaye")
+            console.log(res);
+            alert("Message bien envoyé!");
         })
+            .catch((err) => {
+            console.log(err);
+            alert("Erreur lors de l'envoi du message, veuillez réessayer.");
+        });
 
 }
 

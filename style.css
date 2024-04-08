@@ -4,6 +4,7 @@ body {
     justify-content: space-between;
 }
 
+
 h1 {
     font-family: "Sigmar", sans-serif;
     font-size: 3rem;
@@ -17,7 +18,7 @@ strong {
 }
 
 nav {
-    top: -1rem;
+    top: 1rem;
     left: 30%;
     width: 100%;
 }
@@ -31,7 +32,7 @@ nav {
 }
 
 .navbar-nav .discutons {
-    width: 25%;
+    width: 100%;
 }
 
 .nav-link {
@@ -121,7 +122,7 @@ nav {
 .discutons {
     margin: 5%;
     border: none;
-    width: 80%;
+    width: 100%;
     font-weight: 700;
     padding: 0.5rem;
     border-radius: 2rem;
@@ -142,6 +143,15 @@ nav {
         background-position: -250% center;
     }
 }
+
+.plusinfos{
+    position: absolute;
+    right: 5rem;
+}
+
+
+
+
 
 
 .opo {
@@ -181,10 +191,18 @@ nav {
     text-align: center;
     font-size: 1rem;
     border: 0.51px solid white;
-    width: 20%;
+    width: 100%;
     padding: 0.5rem;
     border-radius: 1.5rem;
-    margin-right: 20px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+}
+
+.buttonprojet{
+    margin-right: 50px;
 }
 
 .section2 .cv button {
@@ -245,10 +263,6 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-}
-
-.boubaimg {
-    border-radius: 15px 50px;
 }
 
 .stat {
