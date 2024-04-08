@@ -239,7 +239,7 @@
             <div id="Portfolio" class="mt-5">
                 <h1>Portfolio</h1>
                 <p>Voici quelques uns de mes projets que j'ai réalisés durant. (Source Code)</p>
-                <div class="projet mt-5">
+                <div class="projet">
 
                     <div class="cartes">
 
@@ -253,7 +253,7 @@
                         </div>
                         <div class="carte" onclick="openPopUp3()">
                             <img src="assets/api.png"></img>
-                            <span>Conception Api - JavaScript</span>
+                            <span>Conception Api - JS</span>
                         </div>
                         <div class="carte" onclick="openPopUp4()">
                             <img src="assets/java-original.svg"></img>
@@ -262,22 +262,134 @@
 
                     </div>
                 </div>
+            </div>
 
-                <div id="Contact" class="mt-5">
-                    <h1>Faisons de grandes <br> choses ensemble !</h1>
-                    <p>Pour des collaborations innovantes et des projets, envoyez-moi un message dès maintenant.</p>
+            <div class="popUps">
 
-                    <div class="form row ">
-                        <input type="text" required placeholder="Votre Nom">
-                        <input type="email" required placeholder="Adresse Email">
-                        <textarea placeholder="Des mots ..."></textarea>
-                        <div>
-                            <button type="submit">Envoyer le message <i class="bi bi-send"></i></button>
-                        </div>
+                <div id="overlay1" onclick="closePopUp1()"> </div>
+                <div class="pop-up " id="popUp1">
+
+                    <h1 class="text-center">E-Commerce</h1>
+                    <button class="fermer" onclick="closePopUp1()">Fermer</button>
+
+                    <div class="lien">
+                        <a href="https://gitlab.com/boubacar5/portfolio" target="_blank">
+                            <button class="lienSource">Source Code </button> </a>
                     </div>
+                    <p class="mt-5">Mon projet récent en tant que développeur consiste en la création d'un portfolio
+                        interactif
+                        intégrant une boutique de livres fictifs. En utilisant React.js pour le front-end et PHP pour le
+                        back-end, j'ai développé une interface dynamique permettant aux utilisateurs de parcourir,
+                        acheter,
+                        et
+                        effectuer des paiements sécurisés via <strong> l'intégration de Stripe </strong>. Pour faciliter
+                        la
+                        gestion du contenu,
+                        j'ai ajouté une interface administrateur qui permet aux <strong> administrateurs </strong>
+                        d'ajouter, mettre à jour, ou
+                        supprimer des livres en vente. La communication entre le front-end et le back-end est assurée
+                        par
+                        <strong> Axios </strong>,
+                        garantissant des échanges de données fluides.
+                    </p>
+
+
                 </div>
 
+                <div id="overlay2" onclick="closePopUp2()"> </div>
+                <div class="pop-up" id="popUp2">
+                    <h1 class="text-center"> Spring Security</h1>
+                    <button class="fermer" onclick="closePopUp2()">Fermer</button>
+
+                    <div class="lien">
+                        <a href="https://github.com/boubacargadio/JavaSpring/tree/master/src/main/java/com/example/javaspringexo/autorisations"
+                            target="_blank"> <button class="lienSource"> Source Code </button> </a>
+                    </div>
+                    <p class="mt-5">Dans mon récent projet, j'ai développé une application en utilisant Spring Boot avec
+                        une
+                        emphase particulière sur la sécurité. En intégrant le starter <strong>Spring Security </strong>,
+                        j'ai configuré
+                        l'authentification dans Spring pour garantir un accès sécurisé à l'application. Pour renforcer
+                        la
+                        sécurité, j'ai mis en œuvre la génération d'un token JWT (<strong>JSON Web Token</strong>), puis
+                        j'ai géré le traitement
+                        du token à l'aide d'un filtre dédié. Ce filtre assure la validation et l'authentification des
+                        utilisateurs à chaque requête, offrant ainsi une protection. De plus, j'ai sécurisé différentes
+                        ressources en attribuant des <strong> rôles aux utilisateurs </strong>, assurant ainsi un
+                        contrôle
+                        d'accès approprié.
+                    </p>
+
+                </div>
+
+                <div id="overlay3" onclick="closePopUp3()"> </div>
+                <div class="pop-up" id="popUp3">
+                    <h1 class="text-center ">Api - JS</h1>
+                    <button class="fermer" onclick="closePopUp3()">Fermer</button>
+
+                    <div class="lien">
+                        <a href="https://gitlab.com/boubacar5/cuisineapi.git" target="_blank"> <button
+                                class="lienSource">
+                                Source Code </button> </a>
+                    </div>
+                    <p class="mt-5">En utilisant JavaScript, j'ai développé <strong> une barre de recherche </strong>
+                        qui
+                        permet aux utilisateurs
+                        de rechercher des recettes dans la base de données de TheMealDB. Lorsqu'une recherche est
+                        effectuée,
+                        les
+                        détails de la <strong> recette correspondante </strong> s'affichent. De plus, j'ai intégré une
+                        fonctionnalité permettant
+                        d'obtenir jusqu'à six recettes aléatoires lorsqu'un utilisateur clique sur le bouton dédié.
+                        Chaque
+                        résultat de recherche ou recette aléatoire est présenté sous forme de carte, comprenant une
+                        image,
+                        le
+                        nom de la recette, et un lien pour afficher plus d'informations.
+                    </p>
+
+                </div>
+
+                <div id="overlay4" onclick="closePopUp4()"> </div>
+                <div class="pop-up" id="popUp4">
+                    <h1 class="text-center">POO - Java</h1>
+                    <button class="fermer" onclick="closePopUp4()">Fermer</button>
+
+                    <div class="lien ">
+                        <a href="https://github.com/boubacargadio/JavaExo/tree/boubacar/src" target="_blank"> <button
+                                class="lienSource"> Source Code </button> </a>
+                    </div>
+                    <p class="mt-5 fs-1">Le jeu Tic Tac Toe est conçu avec une approche de conception orientée objet
+                        (<strong>POO</strong>) en Java.
+                        Les classes clés telles que Game, Cell, et Player encapsulent des fonctionnalités spécifiques.
+                        La
+                        classe
+                        Game gère la logique du jeu avec des <strong> méthodes </strong>comme move(), isValidMove(), et
+                        checkPlayerWin(). La
+                        classe Player définit les caractéristiques individuelles des joueurs. Cette structure favorise
+                        une
+                        organisation claire et modulaire du code, améliorant la lisibilité et la <strong> maintenance du
+                            projet</strong>.
+                    </p>
+
+                </div>
             </div>
+
+            <div id="Contact" class="mt-5">
+                <h1>Faisons de grandes <br> choses ensemble !</h1>
+                <p>Pour des collaborations innovantes et des projets, envoyez-moi un message dès maintenant.</p>
+
+                <div class="form row ">
+                    <input type="text" required placeholder="Votre Nom">
+                    <input type="email" required placeholder="Adresse Email">
+                    <textarea placeholder="Des mots ..."></textarea>
+                    <div>
+                        <button type="submit">Envoyer le message <i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
     </section>
 </body>
 
