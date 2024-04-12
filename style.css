@@ -75,6 +75,7 @@ nav {
     border: 1px solid rgba(108, 108, 108, 0.481);
     margin: 2rem;
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     padding: 1rem;
     border-radius: 1.5rem;
     position: fixed;
@@ -199,6 +200,7 @@ nav {
     color: white;
     background-color: transparent;
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px)
 }
 
 .buttonprojet{
@@ -233,6 +235,7 @@ nav {
     align-items: center;
     background-color: transparent;
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     border: 1px solid rgba(255, 255, 255, 0.409);
 
     cursor: pointer;
@@ -282,7 +285,7 @@ nav {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     backdrop-filter: blur(10px);
-
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .stat div span {
@@ -355,6 +358,7 @@ nav {
 .form input {
     background-color: transparent;
     backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     color: white;
     font-size: 1.2rem;
     margin-bottom: 2%;
@@ -376,6 +380,7 @@ nav {
     resize: none;
     background-color: transparent;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     font-size: 1.2rem;
     color: white;
     font-weight: 700;
@@ -400,6 +405,7 @@ input:focus {
     resize: none;
     background-color: transparent;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     font-size: 1.5rem;
     color: white;
     margin-top: 4%;
@@ -490,6 +496,7 @@ input:focus {
     padding: 20px;
     background-color: transparent;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 1rem ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
